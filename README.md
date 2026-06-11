@@ -6,3 +6,5 @@ This project is a customizable mock test platform designed for CSIR-UGC NET Phys
 - https://drive.google.com/drive/folders/1i2LzDWPRwi0MzJWp5Qt4vrnLh4WspdMH?usp=drive_link  
 
 This makes the mock test highly flexible, exam-like, and easy to use for learners preparing for CSIR NET Physics.
+You can watch youtube video to get the idea of how to use it.
+- https://youtu.be/EnWsPTGrU1c?si=EK1Z1Y5EdX4hhXPE
