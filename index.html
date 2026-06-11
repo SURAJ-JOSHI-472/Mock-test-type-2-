@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Topic-wise Mock Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CSIR-UGC NET Topic-wise Mock Test</h1>
+    <button id="helpBtn">Help</button>
+  </header>
+
+  <main>
+    <!-- Setup form -->
+    <div id="setup">
+      <label>Questions per Topic: <input type="number" id="numQuestions" value="5"></label><br>
+      <label>Exam Duration (minutes): <input type="number" id="examTime" value="120"></label><br>
+      <p>Select the root folder containing all topics:</p>
+      <input type="file" id="folders" webkitdirectory multiple>
+      <button id="startBtn">Start Test</button>
+    </div>
+
+    <!-- Exam area -->
+    <div id="exam" style="display:none;">
+      <div id="timer"></div>
+      <div id="examLayout">
+        <div id="sidebar"></div>
+        <div id="questionArea"></div>
+      </div>
+      <div id="navButtons">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="submitBtn">Submit Test</button>
+      </div>
+    </div>
+
+    <div id="result"></div>
+  </main>
+
+  <!-- Help Modal -->
+<div id="helpModal" class="modal">
+  <div class="modal-content">
+    <span id="closeHelp" class="close">&times;</span>
+    <h2>How to Use This Website</h2>
+    <ol>
+      <li>Select the root folder that contains your topic subfolders (e.g., Physics, Chemistry).</li>
+      <li>Choose which topics you want to include using the checklist.</li>
+      <li>Set the number of questions per topic and exam duration.</li>
+      <li>Start the test — questions will appear one at a time with navigation.</li>
+      <li>Use the sidebar to jump between questions, and mark questions for review.</li>
+      <li>At the end, submit to download a PDF of your responses.</li>
+    </ol>
+    <p><strong>Download Sample Topic Folders:</strong></p>
+    <ul>
+      <li>
+        <a href="https://drive.google.com/drive/folders/1Di8MUlFYWjfKyMK_IcbuglPotpUDeYGt?usp=drive_link" target="_blank">
+          CSIR NET Physics Topic-wise Folders (Google Drive - Link 1)
+        </a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/drive/folders/1i2LzDWPRwi0MzJWp5Qt4vrnLh4WspdMH?usp=drive_link" target="_blank">
+          Additional CSIR NET Physics Resources (Google Drive - Link 2)
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- Load jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
